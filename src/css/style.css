@@ -7,6 +7,7 @@
   src: url('../assets/fonts/lora-regular/Lora-Regular.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/lora-regular/Lora-Regular.woff') format('woff'),
     url('../assets/fonts/lora-regular/Lora-Regular.ttf') format('truetype');
 }
+
 @font-face {
   font-family: 'Oxygen';
   font-display: swap;
@@ -17,17 +18,27 @@
     url('../assets/fonts/oxygen-regular/Oxygen-Regular.woff') format('woff'), url('../assets/fonts/oxygen-regular/Oxygen-Regular.ttf') format('truetype');
 }
 
+*,
+html,
 body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+}
+
+
 .container {
   margin: 0 auto;
   max-width: 970px;
   padding: 0 15px;
 }
+
 .header {
   position: absolute;
   top: 0;
@@ -85,7 +96,8 @@ li {
   font-size: 50px;
   font-style: normal;
   font-weight: 400;
-  line-height: 51px; /* 102% */
+  line-height: 51px;
+  /* 102% */
   letter-spacing: 2px;
 }
 
