@@ -25,6 +25,9 @@ body {
   margin: 0;
   padding: 0;
 }
+body {
+  position: relative;
+}
 
 ::after,
 ::before {
@@ -43,11 +46,13 @@ body {
   top: 0;
   left: 0;
   right: 0;
+  padding: 17px;
 }
 
 .header__items {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   /* margin: 0 auto; */
 }
 
@@ -132,6 +137,7 @@ body {
   border-radius: 3px;
   background: #dd783f;
   cursor: pointer;
+  transition: all 0.4s;
 }
 
 .btn:hover {
@@ -286,6 +292,7 @@ body {
 }
 
 .mosts {
+  padding-bottom: 89px;
   background: #f7f7f7;
 }
 
@@ -377,7 +384,7 @@ body {
 
 .stay {
   padding-top: 62px;
-  padding-bottom: 89px;
+  height: 377px;
   background: url(../assets/img/bacgroundfooterpng.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -420,9 +427,9 @@ body {
 
 .footer {
   position: absolute;
-  top: 2094;
+  bottom: 0;
   left: 0;
-  right: 0;
+  width: 100%;
   background: rgba(35, 47, 56, 0.6);
 }
 
